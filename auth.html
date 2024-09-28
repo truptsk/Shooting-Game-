@@ -104,50 +104,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authenticated Space</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
+       body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #e9ecef;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        h1 {
-            color: #007BFF;
-        }
+h1 {
+    color: #0056b3;
+    font-weight: bold;
+}
 
-        .container {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    padding: 40px;
+    border: 1px solid #bbb;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-        button {
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #007BFF;
-            color: white;
-            font-size: 16px;
-        }
+button {
+    padding: 12px 24px;
+    margin: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
 
-        button:hover {
-            background-color: #0056b3;
-        }
+button:hover {
+    background-color: #003f7f;
+}
+
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome back, valued customer! (Authenticated)</h1>
-        <p>Thank you for logging in. We're here to assist you.</p>
-        <button id="chatbotBtn">Chat with our bot</button>
-        <button id="logoutBtn">Log out</button>
-    </div>
+   <div class="container">
+    <h1>Welcome back! You are successfully authenticated.</h1>
+    <p>We appreciate you logging in. How can we help you today?</p>
+    <button id="chatbotBtn">Start a conversation with our bot</button>
+    <button id="logoutBtn">Sign out</button>
+</div>
+
 
     <!-- LivePerson Chatbot Integration -->
     <script src="https://lptag.liveperson.net/tag/9994318.js"></script>
